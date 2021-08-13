@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-box{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+#box{
+    display: flex;
+    margin: 0px auto;
+    margin-top: 125px;
+    width: 1000px;
+    height: 500px;
+    background-color: #317b2f;
+}
+
+#information-main{
+    width: 450px;
+    height: 100%;
+    background-color: lightgray;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+    padding: 30px;
+}
+
+.options-h2{
+    margin: 20px 0px 20px 0px;
+}
+
+.p-w-h2{
+    margin: 25px 0px 25px 0px;
+}
+
+#inputs{
+    width: 100%;
+    height: 100px;
+}
+
+#personal-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100px;
+    background-color: #e9f289;
+}
+
+#personal-data input{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}
+
+.age{
+    margin: 0px auto;
+}
+
+#personal-data .input-age{
+    width: 50px;
+}
+
+#statistics-box{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+#statistics-box .statistics-1{
+    width: 50%;
+    height: 100%;
+    background-color: azure;
+}
+
+#personalitation-main{
+    width: 550px;
+    height: 500px;
+}
+
+#personalitation{
+    padding: 30px
+}
+
+.personalitation-h2{
+    margin: 20px 0px 20px 0px;
+}
+
+#editing-boxs{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#editing-boxs #left-box{
+    width: 200px;
+    height: 375px;
+    background-color: #e9f289;
+}
+
+#editing-boxs #character{
+    width: 170px;
+    height: 300px;
+    margin: 0px auto;
+    margin-top: 35px;
+    border: 2px solid black;
+}
+
+
+#editing-boxs #rigth-box{
+    width: 290px;
+    height: 375px;
+    background-color: azure;
+
+
+}
+
+#editing-boxs #rigth-box-grid{
+
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-gap: 15px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+
+#editing-boxs #rigth-box-grid div{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+.options{
+    height: 30px;
+    border: 2px solid black;
+    text-align: center;
+}
