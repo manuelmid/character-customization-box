@@ -1,13 +1,18 @@
+@font-face{
+    src: url(../fonts/static/Orbitron-SemiBold.ttf);
+    font-family: Orbitron;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Orbitron;
+    
 }
 
 #main-box{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: lightblue;
+    /*  */
 }
 
 #box{
@@ -16,13 +21,15 @@
     margin-top: 125px;
     width: 1000px;
     height: 500px;
-    background-color: #317b2f;
+    border-radius: 35px;
+    border: 3px solid black;
+
+    background: url(./img/pattern.png), linear-gradient(157deg, rgba(255,195,27,1) 0%, rgba(251,158,16,1) 12%, rgba(221,107,5,1) 57%, rgba(180,87,4,1) 69%, rgba(0,0,0,1) 100%);
 }
 
 #information-main{
     width: 450px;
     height: 100%;
-    background-color: lightgray;
 }
 
 .information{
@@ -30,14 +37,19 @@
     flex-direction: column;
     position: relative;
     align-content: center;
-    padding: 30px;
+    padding: 27px;
+    
 }
 
 .options-h2{
     margin: 20px 0px 20px 0px;
+    width: 121px;
+    border-bottom: 3px solid black;
 }
 
 .p-w-h2{
+    width: 161px;
+    border-bottom: 3px solid black;
     margin: 25px 0px 25px 0px;
 }
 
@@ -50,9 +62,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
     height: 100px;
-    background-color: #e9f289;
 }
 
 #personal-data input{
@@ -66,59 +77,77 @@
 }
 
 #personal-data .input-age{
-    width: 50px;
+    width: 75px;
 }
 
 #statistics-box{
+    display: flex;
     width: 100%;
     height: 200px;
-    background-color: black;
+    border: 3px solid black
 }
 
 #statistics-box .statistics-1{
+    position: relative;
+    
     width: 50%;
     height: 100%;
-    background-color: azure;
+    border-right: 3px solid black;
+    
+    overflow: hidden;
+    
+}
+
+#statistics-box .statistics-2{
+    width: 50%;
+    height: 100%;
 }
 
 #personalitation-main{
-    width: 550px;
-    height: 500px;
+    width: 545px;
+    margin: 35px;
+    height: 465px;
 }
 
 #personalitation{
-    padding: 30px
+    /* padding: 30px */
 }
 
 .personalitation-h2{
+    font-weight: normal;
+    letter-spacing: 2px;
+
+    background-color: black;
+    width: 489px;
+    color: white;
+    font-size: 21px;
     margin: 20px 0px 20px 0px;
+    text-align: center;
 }
 
 #editing-boxs{
     display: flex;
-    width: 100%;
-    height: 100%;
 }
 
 #editing-boxs #left-box{
     width: 200px;
     height: 375px;
-    background-color: #e9f289;
 }
 
 #editing-boxs #character{
     width: 170px;
-    height: 300px;
+    height: 100%;
     margin: 0px auto;
-    margin-top: 35px;
-    border: 2px solid black;
+
+    border: 3px solid black;
 }
 
 
 #editing-boxs #rigth-box{
     width: 290px;
     height: 375px;
-    background-color: azure;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.082);
 
 
 }
@@ -131,18 +160,73 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin-top: 70px;
+    
 }
 
 
 #editing-boxs #rigth-box-grid div{
     width: 50px;
     height: 50px;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 .options{
-    height: 30px;
-    border: 2px solid black;
+    color: white;
+    background-color: black;
+    height: 25px;
+    margin-bottom: 50px;    
+    border: 3px solid black;
     text-align: center;
+
 }
+
+.options h3{
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 21px;
+}
+
+/*ANIMATIONS*/
+
+  .ocean { 
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom: -80px;
+    left:0;
+    background: #000000;
+  }
+  
+  .wave {
+    background: url(./img/wave.png) repeat-x; 
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 13s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }
