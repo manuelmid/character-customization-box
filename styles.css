@@ -43,11 +43,11 @@
     
 }
 
-.options-h2{
+/* .options-h2{
     margin: 20px 0px 20px 0px;
     width: 121px;
     border-bottom: 3px solid black;
-}
+} */
 
 .p-w-h2{
     width: 161px;
@@ -169,6 +169,12 @@
     border: 3px solid black;
 }
 
+#slider-box{
+    width: 100%;
+    height: 100%;
+    border: 2px solid blue;
+}
+
 #right-box-grid img{
     border: 2px solid black;
 }
@@ -178,10 +184,12 @@
 }
 
 #editing-boxs #right-box{
-    width: 290px;
+    display: flex;
+
+    width: 400%;
     height: 375px;
     border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.082);
+    background-color: rgba(231, 55, 55, 0.521);
 }
 
 #right-box .arrow-right{
@@ -192,7 +200,7 @@
 }
 
 #editing-boxs #right-box-grid{
-
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 0.2fr);
     grid-gap: 15px;
@@ -209,6 +217,7 @@
 }
 
 .options{
+    position: relative;
     color: white;
     background-color: black;
     height: 25px;
@@ -222,6 +231,20 @@
     font-weight: normal;
     letter-spacing: 1px;
     font-size: 21px;
+}
+
+.arrow{
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    top: 0px;
+}
+
+.arrow.right{
+    right: 0px;
 }
 
 /*ANIMATIONS*/
@@ -239,7 +262,7 @@
     background: url(./img/wave.png) repeat-x; 
     position: absolute;
     top: -198px;
-    width: 6400px;
+    width: 6px;
     height: 198px;
     animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
     transform: translate3d(0, 0, 0);
