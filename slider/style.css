@@ -18,7 +18,7 @@
     height: 300px;
 }
 
-#card-1, #card-2, #card-3{
+.card-1, .card-2, .card-3{
     width: 300px;
     height: 300px;
     flex: none;
