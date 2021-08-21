@@ -17,14 +17,14 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 nextBtn.addEventListener('click', ()=>{
     if(counter >= carouselBoxs.length -1) return;
-   carouselSlide.style.transition = "transform 0.1s ease-in-out";
+   carouselSlide.style.transition = "transform 0.1ms ease-in-out";
    counter++;
    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
 prevBtn.addEventListener('click', ()=>{
     if(counter <= 0) return;
-   carouselSlide.style.transition = "transform 0.1s ease-in-out";
+   carouselSlide.style.transition = "transform 0.1ms ease-in-out";
    counter--;
    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
