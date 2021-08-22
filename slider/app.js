@@ -1,5 +1,5 @@
 const carouselSlide = document.querySelector('#carousel-slider');
-const carouselBoxs = document.querySelectorAll('#carousel-slider div')
+const carouselBoxs = document.querySelectorAll('#carousel-slider .card-1, .card-2, .card-3');
 
 //BUTTONS
 

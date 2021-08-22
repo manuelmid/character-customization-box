@@ -240,6 +240,11 @@
     flex: none;
 }
 
+.card-1 #innerBox-1{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
 
 
 
