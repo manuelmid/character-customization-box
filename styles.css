@@ -188,7 +188,6 @@
     width: 300px;
     height: 375px;
     border-radius: 30px;
-    background-color: rgba(231, 55, 55, 0.521);
     overflow: hidden;
 }
 
@@ -235,6 +234,7 @@
 }
 
 .card-1, .card-2, .card-3{
+    display: flex;
     width: 300px;
     height: 300px;
     flex: none;
@@ -243,7 +243,15 @@
 .card-1 #innerBox-1{
     width: 200px;
     height: 200px;
-    background-color: yellow;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#innerBox-1 .face-1, .face-2, .face-3{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 0px 2px black;
 }
 
 
