@@ -154,6 +154,7 @@
 
 #editing-boxs{
     display: flex;
+    justify-content: flex-end;
 }
 
 #editing-boxs #left-box{
@@ -165,26 +166,42 @@
     width: 170px;
     height: 100%;
     margin: 0px auto;
-
     border: 3px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
-/* #slider-box{
-    width: 100%;
-    height: 100%;
-    border: 2px solid blue;
+#head{
+    width: 50px;
+    height: 50px;
+    background: aqua;
+    margin: auto;
 }
 
-#right-box-grid img{
-    border: 2px solid black;
+#body{
+    width: 120px;
+    height: 150px;
+    background: #34caca;
+    margin: auto;
 }
 
-#right-box-grid img:hover{
-    transform: scale(1.3, 1.3);
-} */
+#legs{
+    width: 80px;
+    height: 140px;
+    background: #2a6161;
+    margin: auto;
+}
+
+#shoes{
+    width: 50px;
+    height: 35px;
+    background: black;
+    margin: auto;
+}
 
 #editing-boxs #right-box{
     display: flex;
+
     width: 300px;
     height: 375px;
     border-radius: 30px;
@@ -202,7 +219,6 @@
     text-align: center;
 
     width: 300px;
-    right: 300px;
     justify-content: space-between
 }
 
@@ -254,6 +270,14 @@
     box-shadow: 0px 0px 0px 2px black;
 }
 
+.card-2 #innerBox-2{
+    background-color: chartreuse;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
