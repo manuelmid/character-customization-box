@@ -258,7 +258,7 @@
 
 .card-1, .card-2, .card-3{
     display: flex;
-    width: 300px;
+    width: 299px;
     height: 300px;
     flex: none;
 }
@@ -279,8 +279,8 @@
 
 .card-2 #innerBox-2{
     background-color: chartreuse;
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 110px;
     margin: auto;
     display: flex;
     justify-content: space-between;
