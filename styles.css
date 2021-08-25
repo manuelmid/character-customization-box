@@ -5,7 +5,7 @@
 
 
 *{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family: Orbitron;
@@ -186,13 +186,13 @@
     height: 110px;
 
     box-shadow: 0px 0px 0px 2px black;
-    background: #34caca;
+    background: burlywood;
     margin: auto;
 }
 
 #legs{
-    width: 75px;
-    height: 115px;
+    width: 50px;
+    height: 90px;
 
     box-shadow: 0px 0px 0px 2px black;
     background: #2a6161;
@@ -220,7 +220,7 @@
     display: flex;
     color: white;
     background-color: black;
-    height: 25px;
+    height: 34px;
     margin-bottom: 50px;    
     border: 3px solid black;
     text-align: center;
@@ -245,8 +245,9 @@
 /**/
 
 #carousel-container{
+    box-sizing: border-box;
     margin: auto;
-    border: 5px solid black;
+    border: 3px solid black;
     overflow: hidden;
 }
 
@@ -256,7 +257,7 @@
     height: 300px;
 }
 
-.card-1, .card-2, .card-3{
+.card-1, .card-2, .card-3, .card-4{
     display: flex;
     width: 299px;
     height: 300px;
@@ -264,22 +265,25 @@
 }
 
 .card-1 #innerBox-1{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 170px;
     margin: auto;
+
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
-#innerBox-1 .face-1, .face-2, .face-3{
+#innerBox-1 .face-1, .face-2, .face-3, .face-4, .face-5, .face-6{
     width: 50px;
     height: 50px;
     box-shadow: 0px 0px 0px 2px black;
 }
 
 .card-2 #innerBox-2{
-    background-color: chartreuse;
-    width: 270px;
+    
+    width: 285px;
     height: 110px;
     margin: auto;
     display: flex;
