@@ -130,8 +130,8 @@
 
 #personalitation-main{
     width: 545px;
+    /* height: 465px; */
     margin: 35px;
-    height: 465px;
 }
 
 
@@ -232,9 +232,11 @@
 }
 
 .option, button{
+    width: 35px;
     background-color: black;
-    width: 20px;
     color: white;
+    border: black;
+    cursor: pointer;
 
 }
 
@@ -312,6 +314,29 @@
 }
 .card-4 #innerBox-4 > div{
     box-shadow: 0px 0px 0px 2px black;
+}
+
+
+/**HOVERS ANIMATIONS**/
+
+.option, button:hover{
+    border: 2px solid oldlace;
+}
+
+#innerBox-1 > div:hover{
+    transform: scale(1.2, 1.2);
+}
+
+#innerBox-2 > div:hover{
+    transform: scale(1.2, 1.2);
+}
+
+#innerBox-3 > div:hover{
+    transform: scale(1.2, 1.2);
+}
+
+#innerBox-4 > div:hover{
+    transform: scale(1.2, 1.2);
 }
 
 
