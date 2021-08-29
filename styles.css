@@ -20,7 +20,7 @@
 #box{
     display: flex;
     margin: 0px auto;
-    margin-top: 125px;
+    /* margin-top: 125px; */
     width: 1000px;
     height: 500px;
     border-radius: 35px;
@@ -325,18 +325,22 @@
 
 #innerBox-1 > div:hover{
     transform: scale(1.2, 1.2);
+    box-shadow: 0px 0px 20px #f4910e;
 }
 
 #innerBox-2 > div:hover{
     transform: scale(1.2, 1.2);
+    box-shadow: 0px 0px 20px #f4910e;
 }
 
 #innerBox-3 > div:hover{
     transform: scale(1.2, 1.2);
+    box-shadow: 0px 0px 20px #f4910e;
 }
 
 #innerBox-4 > div:hover{
     transform: scale(1.2, 1.2);
+    box-shadow: 0px 0px 20px #f4910e;
 }
 
 
