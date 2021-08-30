@@ -1,0 +1,158 @@
+@media (max-width:1250px){
+    #box{
+        width: 90%;
+        margin: 0px auto;
+    }
+}
+
+@media (max-width: 1080px){
+
+}
+
+@media (max-width: 970px){
+    #box{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #information-main{
+        margin: 0 auto;
+    }
+
+    .information {
+        align-content: center;
+        padding: 30px;
+        align-items: center;
+        }
+
+    .options-h2{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #personal-data {
+        width: 100%;
+        height: 110px;
+    }
+
+    #inputs{
+        display: contents;
+    }
+
+    .p-w-h2 {
+        width: auto;
+        border-bottom: 3px solid black;
+        margin: 25px 0px 25px 0px;
+    }
+
+    #statistics-box {
+        width: 150%;
+        height: 250px;
+}
+
+    #personalitation-main {
+        width: 100%;
+        margin: 0;
+        display: contents;
+    }
+
+    .personalitation-h2{
+        width: 100%;
+    }
+
+    #editing-boxs {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 925px){
+
+}
+
+@media (max-width: 899px){
+        #statistics-box {
+            width: 130%;
+            height: 250px;
+    }
+
+    #personal-data {
+        width: 90%;
+        height: 130px;
+    }
+    }
+
+@media (max-width: 799px){
+
+    #editing-boxs #character {
+        width: 160px;
+        height: 90%;
+    }
+
+    #right-box{
+        height: 370px;
+    }
+
+}
+
+@media (max-width: 724px){
+    
+}
+
+@media (max-width: 660px){
+
+    #information-main {
+        width: 80%;
+        height: 100%;
+    }
+
+    #box{
+        font-size: small;
+    }
+
+    #personal-data {
+        width: 85%;
+        height: 130px;
+    }
+
+    #personal-data input{
+        font-size: 14px;
+    }
+
+    #editing-boxs #left-box {
+        width: 30%;
+        height: 375px;
+    }
+
+    #editing-boxs #character {
+        width: 100%;
+        height: 90.5%;
+        border-right: none;
+    }
+
+}
+
+@media (max-width: 475px){
+
+    #editing-boxs {
+        flex-direction: column;
+    }
+
+    #editing-boxs #left-box {
+        width: 100%;
+
+    }
+
+    #editing-boxs #character{
+        border: none;
+    }
+
+    #countainer-right-box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
