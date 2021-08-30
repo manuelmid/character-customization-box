@@ -135,6 +135,11 @@
 
 @media (max-width: 475px){
 
+    #box{
+        width: 100%;
+        border-radius: 0;
+    }
+
     #editing-boxs {
         flex-direction: column;
     }
