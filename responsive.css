@@ -160,4 +160,12 @@
 
     }
 
+    #editing-boxs #left-box {
+        height: 330px;
+    }
+
+    .personalitation-h2{
+        margin: 0;
+    }
+
 }
