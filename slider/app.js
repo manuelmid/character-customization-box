@@ -5,6 +5,7 @@ const carouselBoxs = document.querySelectorAll('#carousel-slider .card-1, .card-
 
 const prevBtn = document.querySelector('#prvBtn');
 const nextBtn = document.querySelector('#nextBtn');
+let tittleText = document.getElementById('tittleText');
 
 //COUNTER
 
@@ -34,10 +35,15 @@ carouselSlide.addEventListener('transitionend', ()=>{
         carouselSlide.style.transform = "none";
         counter = carouselBoxs.length -2;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }
+    };
     if(carouselBoxs[counter].id === 'firstClone'){
         carouselSlide.style.transform = "none";
         counter = carouselBoxs.length - counter;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }
+    };
+
+
 });
+
+
+
