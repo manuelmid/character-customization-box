@@ -1,46 +1,57 @@
-@font-face{
-    src: url(./font/static/Orbitron-SemiBold.ttf);
-    font-family: Orbitron;
+@font-face {
+  src: url(./font/static/Orbitron-SemiBold.ttf);
+  font-family: Orbitron;
 }
 
-
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: Orbitron;
-    
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Orbitron;
 }
 
-
-#main-box{
-    /*  */
+body {
+  background-color: #323232;
 }
 
-#box{
-    display: flex;
-    margin: 0px auto;
-    /* margin-top: 125px; */
-    width: 1000px;
-    height: 500px;
-    border-radius: 35px;
-    border: 3px solid black;
-
-    background: url(./img/pattern.png)repeat, linear-gradient(157deg, rgba(255,195,27,1) 0%, rgba(251,158,16,1) 12%, rgba(221,107,5,1) 57%, rgba(180,87,4,1) 69%, rgba(0,0,0,1) 100%);
+#main-box {
+  /*  */
 }
 
-#information-main{
-    width: 450px;
-    height: 100%;
+#box {
+  display: flex;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
+  border-radius: 35px;
+  border: 3px solid black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: url(./img/pattern.png) repeat,
+    linear-gradient(
+      157deg,
+      rgba(255, 195, 27, 1) 0%,
+      rgba(251, 158, 16, 1) 12%,
+      rgba(221, 107, 5, 1) 57%,
+      rgba(180, 87, 4, 1) 69%,
+      rgba(0, 0, 0, 1) 100%
+    );
 }
 
-.information{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-content: center;
-    padding: 27px;
-    
+#information-main {
+  width: 450px;
+  height: 100%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: center;
+  padding: 27px;
 }
 
 /* .options-h2{
@@ -49,410 +60,409 @@
     border-bottom: 3px solid black;
 } */
 
-.p-w-h2{
-    width: 161px;
-    border-bottom: 3px solid black;
-    margin: 25px 0px 25px 0px;
+.p-w-h2 {
+  width: 161px;
+  border-bottom: 3px solid black;
+  margin: 25px 0px 25px 0px;
 }
 
-#inputs{
-    width: 100%;
-    height: 100px;
+#inputs {
+  width: 100%;
+  height: 100px;
 }
 
-#inputs input{
-    font-size: 17px;
+#inputs input {
+  font-size: 17px;
 }
 
-#personal-data{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 70%;
-    height: 100px;
+#personal-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: 100px;
 }
 
-#personal-data input{
-    width: 100%;
-    height: 25px;
-    text-align: center;
+#personal-data input {
+  width: 100%;
+  height: 25px;
+  text-align: center;
 }
 
-.age{
-    margin: 0px auto;
+.age {
+  margin: 0px auto;
 }
 
-#personal-data .input-age{
-    width: 75px;
+#personal-data .input-age {
+  width: 75px;
 }
 
-#statistics-box{
-    display: flex;
-    width: 100%;
-    height: 200px;
-    border: 3px solid black
+#statistics-box {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  border: 3px solid black;
 }
 
-#statistics-box .statistics-1{
-    position: relative;
-    
-    width: 50%;
-    height: 100%;
-    border-right: 3px solid black;
-    
-    overflow: hidden;
-    
+#statistics-box .statistics-1 {
+  position: relative;
+
+  width: 50%;
+  height: 100%;
+  border-right: 3px solid black;
+
+  overflow: hidden;
 }
 
-#statistics-box .statistics-2{
-    width: 50%;
-    height: 100%;
+#statistics-box .statistics-2 {
+  width: 50%;
+  height: 100%;
 }
 
-.statistics-2 .vertical-bars-box{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: baseline;
+.statistics-2 .vertical-bars-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: baseline;
 
-    width: 80%;
-    height: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
+  width: 80%;
+  height: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
 }
 
 .statistics-2 .vertical-bars-box .v- {
-    overflow: hidden;
-    width: 20px;
-    height: 100%;
-    border: 2px solid black;
+  overflow: hidden;
+  width: 20px;
+  height: 100%;
+  border: 2px solid black;
 }
 
-
-
-#personalitation-main{
-    width: 545px;
-    /* height: 465px; */
-    margin: 35px;
+#personalitation-main {
+  width: 545px;
+  /* height: 465px; */
+  margin: 35px;
 }
 
+.personalitation-h2 {
+  font-weight: normal;
+  letter-spacing: 2px;
 
-.personalitation-h2{
-    font-weight: normal;
-    letter-spacing: 2px;
-
-    background-color: black;
-    width: 489px;
-    color: white;
-    font-size: 21px;
-    margin: 20px 0px 20px 0px;
-    text-align: center;
+  background-color: black;
+  width: 489px;
+  color: white;
+  font-size: 21px;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
 }
 
-
-
-#editing-boxs{
-    display: flex;
-    justify-content: flex-end;
+#editing-boxs {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#editing-boxs #left-box{
-    width: 200px;
-    height: 375px;
+#editing-boxs #left-box {
+  width: 200px;
+  height: 375px;
 }
 
-#editing-boxs #character{
-    width: 170px;
-    height: 100%;
-    margin: 0px auto;
-    border: 3px solid black;
-    /* display: flex;
+#editing-boxs #character {
+  width: 170px;
+  height: 100%;
+  margin: 0px auto;
+  border: 3px solid black;
+  /* display: flex;
     flex-direction: column; */
 }
 
-#head{
-    width: 50px;
-    height: 50px;
+#head {
+  width: 50px;
+  height: 50px;
 
-    box-shadow: 0px 0px 0px 2px black;
-    background: burlywood;
-    margin: auto;
-    margin-top: 30px;
+  box-shadow: 0px 0px 0px 2px black;
+  background: burlywood;
+  margin: auto;
+  margin-top: 30px;
 }
 
-#body{
-    width: 90px;
-    height: 110px;
+#body {
+  width: 90px;
+  height: 110px;
 
-    box-shadow: 0px 0px 0px 2px black;
-    background: burlywood;
-    margin: auto;
+  box-shadow: 0px 0px 0px 2px black;
+  background: burlywood;
+  margin: auto;
 }
 
-#legs{
-    width: 50px;
-    height: 90px;
+#legs {
+  width: 50px;
+  height: 90px;
 
-    box-shadow: 0px 0px 0px 2px black;
-    margin: auto;
+  box-shadow: 0px 0px 0px 2px black;
+  margin: auto;
 }
 
-#shoes{
-    width: 50px;
-    height: 35px;
-    background: black;
-    margin: auto;
+#shoes {
+  width: 50px;
+  height: 35px;
+  background: black;
+  margin: auto;
 }
 
-#editing-boxs #right-box{
-    display: flex;
+#editing-boxs #right-box {
+  display: flex;
 
-    width: 300px;
-    height: 375px;
-    border-radius: 30px;
-    overflow: hidden;
+  width: 300px;
+  height: 375px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
-.options{
-    position: absolute;
-    display: flex;
-    color: white;
-    background-color: black;
-    height: 34px;
-    margin-bottom: 50px;    
-    border: 3px solid black;
-    text-align: center;
+.options {
+  position: absolute;
+  display: flex;
+  color: white;
+  background-color: black;
+  height: 34px;
+  margin-bottom: 50px;
+  border: 3px solid black;
+  text-align: center;
 
-    width: 300px;
-    justify-content: space-between
+  width: 300px;
+  justify-content: space-between;
 }
 
-.options h3{
-    font-weight: normal;
-    letter-spacing: 1px;
-    font-size: 21px;
+.options h3 {
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 21px;
 }
 
-.option, button{
-    width: 35px;
-    background-color: black;
-    color: white;
-    border: black;
-    cursor: pointer;
-
+.option,
+button {
+  width: 35px;
+  background-color: black;
+  color: white;
+  border: black;
+  cursor: pointer;
 }
 
 /**/
 
-#carousel-container{
-    box-sizing: border-box;
-    margin: auto;
-    border: 3px solid black;
-    overflow: hidden;
+#carousel-container {
+  box-sizing: border-box;
+  margin: auto;
+  border: 3px solid black;
+  overflow: hidden;
 }
 
-#carousel-slider{
-    display: flex;
-    width: 100%;
-    height: 300px;
+#carousel-slider {
+  display: flex;
+  width: 100%;
+  height: 300px;
 }
 
-.card-1, .card-2, .card-3, .card-4{
-    display: flex;
-    width: 299px;
-    height: 300px;
-    flex: none;
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  display: flex;
+  width: 299px;
+  height: 300px;
+  flex: none;
 }
 
-.card-1 #innerBox-1{
-    width: 180px;
-    height: 170px;
-    margin: auto;
+.card-1 #innerBox-1 {
+  width: 180px;
+  height: 170px;
+  margin: auto;
 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: space-around;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
-#innerBox-1 .face-1, .face-2, .face-3, .face-4, .face-5, .face-6{
-    width: 50px;
-    height: 50px;
-    box-shadow: 0px 0px 0px 2px black;
+#innerBox-1 .face-1,
+.face-2,
+.face-3,
+.face-4,
+.face-5,
+.face-6 {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 0px 2px black;
 
-    font-size: 10px;
-    text-align: center;
-}
-
-.card-2 #innerBox-2{
-    width: 285px;
-    height: 110px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+  font-size: 10px;
+  text-align: center;
 }
 
-.card-3 #innerBox-3{
-    width: 220px;
-    height: 90px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+.card-2 #innerBox-2 {
+  width: 285px;
+  height: 110px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.card-4 #innerBox-4{
-    width: 200px;
-    height: 35px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+.card-3 #innerBox-3 {
+  width: 220px;
+  height: 90px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.card-2 #innerBox-2 > div{
-    box-shadow: 0px 0px 0px 2px black;
-}
-.card-3 #innerBox-3 > div{
-    box-shadow: 0px 0px 0px 2px black;
-}
-.card-4 #innerBox-4 > div{
-    box-shadow: 0px 0px 0px 2px black;
+.card-4 #innerBox-4 {
+  width: 200px;
+  height: 35px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
+.card-2 #innerBox-2 > div {
+  box-shadow: 0px 0px 0px 2px black;
+}
+.card-3 #innerBox-3 > div {
+  box-shadow: 0px 0px 0px 2px black;
+}
+.card-4 #innerBox-4 > div {
+  box-shadow: 0px 0px 0px 2px black;
+}
 
 /**HOVERS ANIMATIONS**/
 
-.option, button:hover{
-    border: 2px solid oldlace;
+.option,
+button:hover {
+  border: 2px solid oldlace;
 }
 
-#innerBox-1 > div:hover{
-    transform: scale(1.2, 1.2);
-    box-shadow: 0px 0px 20px #f4910e;
+#innerBox-1 > div:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 0px 20px #f4910e;
 }
 
-#innerBox-2 > div:hover{
-    transform: scale(1.2, 1.2);
-    box-shadow: 0px 0px 20px #f4910e;
+#innerBox-2 > div:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 0px 20px #f4910e;
 }
 
-#innerBox-3 > div:hover{
-    transform: scale(1.2, 1.2);
-    box-shadow: 0px 0px 20px #f4910e;
+#innerBox-3 > div:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 0px 20px #f4910e;
 }
 
-#innerBox-4 > div:hover{
-    transform: scale(1.2, 1.2);
-    box-shadow: 0px 0px 20px #f4910e;
+#innerBox-4 > div:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 0px 20px #f4910e;
 }
-
-
-
 
 /*ANIMATIONS*/
 
-  .ocean { 
-    height: 5%;
-    width:100%;
-    position:absolute;
-    bottom: -80px;
-    left:0;
-    background: #000000;
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  background: #000000;
+}
+
+.wave {
+  background: url(./img/wave.png) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6px;
+  height: 198px;
+  animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 13s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
   }
-  
-  .wave {
-    background: url(./img/wave.png) repeat-x; 
-    position: absolute;
-    top: -198px;
-    width: 6px;
-    height: 198px;
-    animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
+  100% {
+    margin-left: -1600px;
   }
-  
-  .wave:nth-of-type(2) {
-    top: -175px;
-    animation: wave 13s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-    opacity: 1;
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
   }
-  
-  @keyframes wave {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -1600px;
-    }
+  50% {
+    transform: translate3d(0, 5px, 0);
   }
-  
-  @keyframes swell {
-    0%, 100% {
-      transform: translate3d(0,-25px,0);
-    }
-    50% {
-      transform: translate3d(0,5px,0);
-    }
-  }
+}
 
 /*ANIMATIONS BARS*/
 
-.pad-bar-1{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    animation: pad1 5s linear infinite;
+.pad-bar-1 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  animation: pad1 5s linear infinite;
 }
 
-.pad-bar-2{
+.pad-bar-2 {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  animation: pad2 5s linear infinite;
+}
+
+.pad-bar-3 {
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  animation: pad1 3s linear infinite;
+}
+
+@keyframes pad1 {
+  0% {
+    margin-top: 0 auto;
+  }
+  50% {
+    margin-top: 90px;
+  }
+  70% {
+    margin-top: 70px;
+  }
+  100% {
+    margin-top: 0 auto;
+  }
+}
+
+@keyframes pad2 {
+  0% {
     margin-top: 30px;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    animation: pad2 5s linear infinite;
-}
-
-.pad-bar-3{
+  }
+  20% {
+    margin-top: 130px;
+  }
+  40% {
     margin-top: 80px;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    animation: pad1 3s linear infinite;
+  }
+  60% {
+    margin-top: 60px;
+  }
+  100% {
+    margin-top: 30px;
+  }
 }
-
-
-@keyframes pad1{
-    0%{
-        margin-top: 0 auto;
-    }
-    50%{
-        margin-top: 90px;
-    }
-    70%{
-        margin-top: 70px;
-    }
-    100%{
-        margin-top: 0 auto;
-    }
-}
-
-@keyframes pad2{
-    0%{
-        margin-top: 30px;
-    }
-    20%{
-        margin-top: 130px;
-    }
-    40%{
-        margin-top: 80px;
-    }
-    60%{
-        margin-top: 60px;
-    }
-    100%{
-        margin-top: 30px;
-    }
-}
-
 
 /*RESPONSIVE DISIGN*/
