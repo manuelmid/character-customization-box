@@ -35,7 +35,7 @@ nextBtn.addEventListener('click', function (ev) {
     }
 });
 
-prevBtn.addEventListener('click', function () {
+prevBtn.addEventListener('click', function (ev) {
     if (counter <= 0) return;
     carouselSlide.style.transition = "transform 0.1ms ease-in-out";
     counter--;
@@ -43,14 +43,13 @@ prevBtn.addEventListener('click', function () {
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     var titleContainer = ev.target;
     titleContainer = titleContainer.offsetParent.querySelector('#tittleText');
-    if (currentSize === -598) {
-        titleContainer.innerText = "Body";
-    } else if (currentSize === -897) {
-        titleContainer.innerText = "Legs";
+    if (currentSize === -299) {
+        titleContainer.innerText = "SHOES";
     } else if (currentSize === -1196) {
-        titleContainer.innerText = "Shoes";
-    } else {
-        titleContainer.innerText = "Face";
+        titleContainer.innerText = "G";
+    }
+     else if (currentSize === -0) {
+        titleContainer.innerText = "H";
     }
 });
 
