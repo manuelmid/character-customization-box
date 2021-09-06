@@ -153,15 +153,22 @@
         border: none;
     }
 
+    #character .colores{
+        height: 50px;
+    }
+
     #countainer-right-box{
         width: 100%;
+        height: 500px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        align-content: center;
 
     }
 
     #editing-boxs #left-box {
-        height: 330px;
+        height: auto;
     }
 
     .personalitation-h2{

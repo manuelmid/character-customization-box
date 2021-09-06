@@ -180,19 +180,22 @@ body {
 #character .colores{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 25px;
+  height: 30px;
   margin-top: 25px;
   padding: 5px;
+  background-color: rgba(255, 255, 255, 0.233);
 }
 
 #character .color-1,
 .color-2,
 .color-3,
 .color-4,
-.color-5{
-  width: 15%;
-  height: 100%;
+.color-5,
+.color-6{
+  width: 10%;
+  height: 70%;
   box-shadow: 0px 0px 0px 2px black;
 }
 
@@ -210,6 +213,9 @@ body {
 }
 .color-5{
   background-color: #8b4513;
+}
+.color-6{
+  background-color: #da1919;
 }
 
 #head {
@@ -373,27 +379,39 @@ button {
 .option,
 button:hover {
   border: 2px solid oldlace;
+  cursor: pointer;
 }
 
 #innerBox-1 > div:hover {
   transform: scale(1.2, 1.2);
   box-shadow: 0px 0px 20px #f4910e;
+  cursor: pointer;
 }
 
 #innerBox-2 > div:hover {
   transform: scale(1.2, 1.2);
   box-shadow: 0px 0px 20px #f4910e;
+  cursor: pointer;
 }
 
 #innerBox-3 > div:hover {
   transform: scale(1.2, 1.2);
   box-shadow: 0px 0px 20px #f4910e;
+  cursor: pointer;
 }
 
 #innerBox-4 > div:hover {
   transform: scale(1.2, 1.2);
   box-shadow: 0px 0px 20px #f4910e;
+  cursor: pointer;
 }
+
+#character .colores > div:hover{
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+/**HOVERS ANIMATIONS**/
 
 /*ANIMATIONS*/
 
