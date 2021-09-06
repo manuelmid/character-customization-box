@@ -7,12 +7,31 @@ const prevBtn = document.querySelector('#prvBtn');
 const nextBtn = document.querySelector('#nextBtn');
 let tittleText = document.getElementById('tittleText');
 
+let faceCtn = document.querySelector('.face-1');
+let headCtn = document.getElementById('head');
+
+const headCt = document.createElement('img');
+
+
 //COUNTER
 
 let counter = 1;
 const size = carouselBoxs[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+/*PRUEBA*/
+let carta = 'face-1';
+
+faceCtn.addEventListener('click', function () {
+    console.log('tok');
+    headCtn.innerHTML = null;
+    headCt.src = `./img/faces/${carta}.png`;
+    headCt.classList.add('carta');
+    headCtn.append(headCt);
+});
+
+/*PRUEBA*/
 
 //BUTTON LISTENERS
 
