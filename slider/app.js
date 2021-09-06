@@ -25,13 +25,13 @@ nextBtn.addEventListener('click', function (ev) {
     var titleContainer = ev.target;
     titleContainer = titleContainer.offsetParent.querySelector('#tittleText');
     if (currentSize === -598) {
-        titleContainer.innerText = "Body";
+        titleContainer.innerText = "BODY";
     } else if (currentSize === -897) {
-        titleContainer.innerText = "Legs";
+        titleContainer.innerText = "LEGS";
     } else if (currentSize === -1196) {
-        titleContainer.innerText = "Shoes";
+        titleContainer.innerText = "SHOES";
     } else {
-        titleContainer.innerText = "Face";
+        titleContainer.innerText = "FACE";
     }
 });
 
@@ -41,15 +41,19 @@ prevBtn.addEventListener('click', function (ev) {
     counter--;
     var currentSize = (-size * counter);
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    console.log(currentSize);
     var titleContainer = ev.target;
     titleContainer = titleContainer.offsetParent.querySelector('#tittleText');
-    if (currentSize === -299) {
+    if (currentSize === -0) {
         titleContainer.innerText = "SHOES";
-    } else if (currentSize === -1196) {
-        titleContainer.innerText = "G";
+    } else if (currentSize === -897) {
+        titleContainer.innerText = "LEGS";
     }
-     else if (currentSize === -0) {
-        titleContainer.innerText = "H";
+     else if (currentSize === -598) {
+        titleContainer.innerText = "BODY";
+    }
+    else {
+        titleContainer.innerText = "FACE"
     }
 });
 
