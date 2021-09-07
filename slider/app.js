@@ -1,16 +1,31 @@
 const carouselSlide = document.querySelector('#carousel-slider');
 const carouselBoxs = document.querySelectorAll('#carousel-slider .card-1, .card-2, .card-3, .card-4');
+const headCtn = document.getElementById('head');
+const bodyCtn = document.getElementById('body');
+const legsCtn = document.getElementById('legs');
+const shoesCtn = document.getElementById('shoes');
+const imgCt = document.createElement('img');
 
 //BUTTONS
 
 const prevBtn = document.querySelector('#prvBtn');
 const nextBtn = document.querySelector('#nextBtn');
+
+//BUTTONS
+
 let tittleText = document.getElementById('tittleText');
 
-let faceCtn = document.querySelector('.face-1');
-let headCtn = document.getElementById('head');
 
-const headCt = document.createElement('img');
+let faceOne = document.querySelector('.face-1');
+let faceTwo = document.querySelector('.face-2');
+let faceThree = document.querySelector('.face-3');
+let faces = ['face-1', 'face-2', 'face-3'];
+
+let bodyOne = document.querySelector('.face-1');
+let bodyTwo = document.querySelector('.face-2');
+let bodyThree = document.querySelector('.face-3');
+let bodys = ['body-1', 'body-2', 'body-3'];
+
 
 
 //COUNTER
@@ -20,18 +35,35 @@ const size = carouselBoxs[0].clientWidth;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-/*PRUEBA*/
-let carta = 'face-1';
+/*CLICKS FUNCTION*/
 
-faceCtn.addEventListener('click', function () {
+//face
+faceOne.addEventListener('click', function () {
     console.log('tok');
     headCtn.innerHTML = null;
-    headCt.src = `./img/faces/${carta}.png`;
-    headCt.classList.add('carta');
-    headCtn.append(headCt);
+    imgCt.src = `./img/faces/${faces[0]}.png`;
+    imgCt.classList.add(faces[0]);
+    headCtn.append(imgCt);
+});
+faceTwo.addEventListener('click', function () {
+    console.log('tok');
+    headCtn.innerHTML = null;
+    imgCt.src = `./img/faces/${faces[1]}.png`;
+    imgCt.classList.add(faces[1]);
+    headCtn.append(imgCt);
+});
+faceThree.addEventListener('click', function () {
+    console.log('tok');
+    headCtn.innerHTML = null;
+    imgCt.src = `./img/faces/${faces[2]}.png`;
+    imgCt.classList.add(faces[2]);
+    headCtn.append(imgCt);
 });
 
-/*PRUEBA*/
+//body
+
+
+/*CLICKS FUNCTION*/
 
 //BUTTON LISTENERS
 
@@ -88,3 +120,5 @@ carouselSlide.addEventListener('transitionend', function () {
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     };
 });
+
+//BUTTON LISTENERS
