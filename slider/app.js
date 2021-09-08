@@ -62,6 +62,28 @@ faceThree.addEventListener('click', function () {
 
 //body
 
+bodyOne.addEventListener('click', function () {
+    console.log('tok');
+    headCtn.innerHTML = null;
+    imgCt.src = `./img/faces/${faces[0]}.png`;
+    imgCt.classList.add(faces[0]);
+    headCtn.append(imgCt);
+});
+bodyTwo.addEventListener('click', function () {
+    console.log('tok');
+    headCtn.innerHTML = null;
+    imgCt.src = `./img/faces/${faces[1]}.png`;
+    imgCt.classList.add(faces[1]);
+    headCtn.append(imgCt);
+});
+bodyThree.addEventListener('click', function () {
+    console.log('tok');
+    headCtn.innerHTML = null;
+    imgCt.src = `./img/faces/${faces[2]}.png`;
+    imgCt.classList.add(faces[2]);
+    headCtn.append(imgCt);
+});
+
 
 /*CLICKS FUNCTION*/
 
