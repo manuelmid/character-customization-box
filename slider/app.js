@@ -21,9 +21,9 @@ let faceTwo = document.querySelector('.face-2');
 let faceThree = document.querySelector('.face-3');
 let faces = ['face-1', 'face-2', 'face-3'];
 
-let bodyOne = document.querySelector('.face-1');
-let bodyTwo = document.querySelector('.face-2');
-let bodyThree = document.querySelector('.face-3');
+let bodyOne = document.querySelector('.body-1');
+let bodyTwo = document.querySelector('.body-2');
+let bodyThree = document.querySelector('.body-3');
 let bodys = ['body-1', 'body-2', 'body-3'];
 
 
@@ -64,24 +64,24 @@ faceThree.addEventListener('click', function () {
 
 bodyOne.addEventListener('click', function () {
     console.log('tok');
-    headCtn.innerHTML = null;
-    imgCt.src = `./img/faces/${faces[0]}.png`;
-    imgCt.classList.add(faces[0]);
-    headCtn.append(imgCt);
+    bodyCtn.innerHTML = null;
+    imgCt.src = `./img/bodys/${bodys[0]}.png`;
+    imgCt.classList.add(bodys[0]);
+    bodyCtn.append(imgCt);
 });
 bodyTwo.addEventListener('click', function () {
     console.log('tok');
-    headCtn.innerHTML = null;
-    imgCt.src = `./img/faces/${faces[1]}.png`;
-    imgCt.classList.add(faces[1]);
-    headCtn.append(imgCt);
+    bodyCtn.innerHTML = null;
+    imgCt.src = `./img/bodys/${bodys[1]}.png`;
+    imgCt.classList.add(bodys[1]);
+    bodyCtn.append(imgCt);
 });
 bodyThree.addEventListener('click', function () {
     console.log('tok');
-    headCtn.innerHTML = null;
-    imgCt.src = `./img/faces/${faces[2]}.png`;
-    imgCt.classList.add(faces[2]);
-    headCtn.append(imgCt);
+    bodyCtn.innerHTML = null;
+    imgCt.src = `./img/bodys/${bodys[2]}.png`;
+    imgCt.classList.add(bodys[2]);
+    bodyCtn.append(imgCt);
 });
 
 
@@ -143,4 +143,4 @@ carouselSlide.addEventListener('transitionend', function () {
     };
 });
 
-//BUTTON LISTENERS
+//BUTTON LISTEbody
