@@ -4,7 +4,7 @@ const headCtn = document.getElementById('head');
 const bodyCtn = document.getElementById('body');
 const legsCtn = document.getElementById('legs');
 const shoesCtn = document.getElementById('shoes');
-const imgCt = document.createElement('img');
+
 
 //BUTTONS
 
@@ -40,6 +40,8 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //face
 faceOne.addEventListener('click', function () {
     console.log('tok');
+
+    let imgCt = document.createElement('img');
     headCtn.innerHTML = null;
     imgCt.src = `./img/faces/${faces[0]}.png`;
     imgCt.classList.add(faces[0]);
@@ -47,6 +49,8 @@ faceOne.addEventListener('click', function () {
 });
 faceTwo.addEventListener('click', function () {
     console.log('tok');
+
+    let imgCt = document.createElement('img');
     headCtn.innerHTML = null;
     imgCt.src = `./img/faces/${faces[1]}.png`;
     imgCt.classList.add(faces[1]);
@@ -54,6 +58,8 @@ faceTwo.addEventListener('click', function () {
 });
 faceThree.addEventListener('click', function () {
     console.log('tok');
+
+    let imgCt = document.createElement('img');
     headCtn.innerHTML = null;
     imgCt.src = `./img/faces/${faces[2]}.png`;
     imgCt.classList.add(faces[2]);
@@ -64,6 +70,8 @@ faceThree.addEventListener('click', function () {
 
 bodyOne.addEventListener('click', function () {
     console.log('tok');
+
+    let imgCt = document.createElement('img');
     bodyCtn.innerHTML = null;
     imgCt.src = `./img/bodys/${bodys[0]}.png`;
     imgCt.classList.add(bodys[0]);
@@ -71,6 +79,8 @@ bodyOne.addEventListener('click', function () {
 });
 bodyTwo.addEventListener('click', function () {
     console.log('tok');
+
+    let imgCt = document.createElement('img');
     bodyCtn.innerHTML = null;
     imgCt.src = `./img/bodys/${bodys[1]}.png`;
     imgCt.classList.add(bodys[1]);
@@ -78,6 +88,8 @@ bodyTwo.addEventListener('click', function () {
 });
 bodyThree.addEventListener('click', function () {
     console.log('tok');
+
+    let imgCt = document.createElement('img');
     bodyCtn.innerHTML = null;
     imgCt.src = `./img/bodys/${bodys[2]}.png`;
     imgCt.classList.add(bodys[2]);
