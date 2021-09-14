@@ -16,15 +16,11 @@ const nextBtn = document.querySelector('#nextBtn');
 let tittleText = document.getElementById('tittleText');
 
 
-let faceOne = document.querySelector('.face-1');
-let faceTwo = document.querySelector('.face-2');
-let faceThree = document.querySelector('.face-3');
-let faces = ['face-1', 'face-2', 'face-3'];
+let faces = document.querySelectorAll("div#innerBox-1 img");
+let face = ['face-1', 'face-2', 'face-3'];
 
-let bodyOne = document.querySelector('.body-1');
-let bodyTwo = document.querySelector('.body-2');
-let bodyThree = document.querySelector('.body-3');
-let bodys = ['body-1', 'body-2', 'body-3'];
+let bodys = document.querySelectorAll("div#innerBox-2 img");
+let body = ['body-1', 'body-2', 'body-3']
 
 
 
@@ -38,61 +34,55 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 /*CLICKS FUNCTION*/
 
 //face
-faceOne.addEventListener('click', function () {
-    console.log('tok');
+faces[0].addEventListener('click', function () {
 
     let imgCt = document.createElement('img');
     headCtn.innerHTML = null;
-    imgCt.src = `./img/faces/${faces[0]}.png`;
-    imgCt.classList.add(faces[0]);
+    imgCt.src = `./img/faces/${face[0]}.png`;
+    imgCt.classList.add(face[0]);
     headCtn.append(imgCt);
 });
-faceTwo.addEventListener('click', function () {
-    console.log('tok');
+faces[1].addEventListener('click', function () {
 
     let imgCt = document.createElement('img');
     headCtn.innerHTML = null;
-    imgCt.src = `./img/faces/${faces[1]}.png`;
-    imgCt.classList.add(faces[1]);
+    imgCt.src = `./img/faces/${face[1]}.png`;
+    imgCt.classList.add(face[1]);
     headCtn.append(imgCt);
 });
-faceThree.addEventListener('click', function () {
-    console.log('tok');
+faces[2].addEventListener('click', function () {
 
     let imgCt = document.createElement('img');
     headCtn.innerHTML = null;
-    imgCt.src = `./img/faces/${faces[2]}.png`;
-    imgCt.classList.add(faces[2]);
+    imgCt.src = `./img/faces/${face[2]}.png`;
+    imgCt.classList.add(face[2]);
     headCtn.append(imgCt);
 });
 
 //body
 
-bodyOne.addEventListener('click', function () {
-    console.log('tok');
+bodys[0].addEventListener('click', function () {
 
     let imgCt = document.createElement('img');
     bodyCtn.innerHTML = null;
-    imgCt.src = `./img/bodys/${bodys[0]}.png`;
-    imgCt.classList.add(bodys[0]);
+    imgCt.src = `./img/bodys/${body[0]}.png`;
+    imgCt.classList.add(body[0]);
     bodyCtn.append(imgCt);
 });
-bodyTwo.addEventListener('click', function () {
-    console.log('tok');
+bodys[1].addEventListener('click', function () {
 
     let imgCt = document.createElement('img');
     bodyCtn.innerHTML = null;
-    imgCt.src = `./img/bodys/${bodys[1]}.png`;
-    imgCt.classList.add(bodys[1]);
+    imgCt.src = `./img/bodys/${body[1]}.png`;
+    imgCt.classList.add(body[1]);
     bodyCtn.append(imgCt);
 });
-bodyThree.addEventListener('click', function () {
-    console.log('tok');
+bodys[2].addEventListener('click', function () {
 
     let imgCt = document.createElement('img');
     bodyCtn.innerHTML = null;
-    imgCt.src = `./img/bodys/${bodys[2]}.png`;
-    imgCt.classList.add(bodys[2]);
+    imgCt.src = `./img/bodys/${body[2]}.png`;
+    imgCt.classList.add(body[2]);
     bodyCtn.append(imgCt);
 });
 

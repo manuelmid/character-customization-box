@@ -411,6 +411,11 @@ button:hover {
   cursor: pointer;
 }
 
+.colores .color-1{
+  border-style: inset;
+  border-color: #71717182;
+}
+
 /**HOVERS ANIMATIONS**/
 
 /*ANIMATIONS*/
