@@ -20,7 +20,7 @@ let faces = document.querySelectorAll("div#innerBox-1 img");
 let face = ['face-1', 'face-2', 'face-3'];
 
 let bodys = document.querySelectorAll("div#innerBox-2 img");
-let body = ['body-1', 'body-2', 'body-3']
+let body = ['body-1', 'body-2', 'body-3'];
 
 
 
