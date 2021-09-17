@@ -2,8 +2,8 @@ const carouselSlide = document.querySelector('#carousel-slider');
 const carouselBoxs = document.querySelectorAll('#carousel-slider .card-1, .card-2, .card-3, .card-4');
 const headCtn = document.getElementById('head');
 const bodyCtn = document.getElementById('body');
-const legsCtn = document.getElementById('legs');
-const shoesCtn = document.getElementById('shoes');
+const legCtn = document.getElementById('legs');
+const shoeCtn = document.getElementById('shoes');
 
 
 //BUTTONS
@@ -22,6 +22,11 @@ let face = ['face-1', 'face-2', 'face-3'];
 let bodys = document.querySelectorAll("div#innerBox-2 img");
 let body = ['body-1', 'body-2', 'body-3'];
 
+let legs = document.querySelectorAll("div#innerBox-3 img");
+let leg = ['leg-1', 'leg-2', 'leg-3'];
+
+let shoes = document.querySelectorAll("div#innerBox-4 img");
+let shoe = ['shoe-1', 'shoe-2', 'shoe-3'];
 
 
 //COUNTER
@@ -84,6 +89,60 @@ bodys[2].addEventListener('click', function () {
     imgCt.src = `./img/bodys/${body[2]}.png`;
     imgCt.classList.add(body[2]);
     bodyCtn.append(imgCt);
+});
+
+//legs
+
+legs[0].addEventListener('click', function () {
+
+    let imgCt = document.createElement('img');
+    legCtn.innerHTML = null;
+    imgCt.src = `./img/legs/${leg[0]}.png`;
+    imgCt.classList.add(leg[0]);
+    legCtn.append(imgCt);
+});
+legs[1].addEventListener('click', function () {
+
+    let imgCt = document.createElement('img');
+    legCtn.innerHTML = null;
+    imgCt.src = `./img/legs/${leg[1]}.png`;
+    imgCt.classList.add(leg[1]);
+    legCtn.append(imgCt);
+});
+legs[2].addEventListener('click', function () {
+
+    let imgCt = document.createElement('img');
+    legCtn.innerHTML = null;
+    imgCt.src = `./img/legs/${leg[2]}.png`;
+    imgCt.classList.add(leg[2]);
+    legCtn.append(imgCt);
+});
+
+//shoes
+
+shoes[0].addEventListener('click', function () {
+
+    let imgCt = document.createElement('img');
+    shoeCtn.innerHTML = null;
+    imgCt.src = `./img/shoes/${shoe[0]}.png`;
+    imgCt.classList.add(shoe[0]);
+    shoeCtn.append(imgCt);
+});
+shoes[1].addEventListener('click', function () {
+
+    let imgCt = document.createElement('img');
+    shoeCtn.innerHTML = null;
+    imgCt.src = `./img/shoes/${shoe[1]}.png`;
+    imgCt.classList.add(shoe[1]);
+    shoeCtn.append(imgCt);
+});
+shoes[2].addEventListener('click', function () {
+
+    let imgCt = document.createElement('img');
+    shoeCtn.innerHTML = null;
+    imgCt.src = `./img/shoes/${shoe[2]}.png`;
+    imgCt.classList.add(shoe[2]);
+    shoeCtn.append(imgCt);
 });
 
 
