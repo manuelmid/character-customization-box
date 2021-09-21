@@ -6,6 +6,7 @@ const legCtn = document.getElementById('legs');
 const shoeCtn = document.getElementById('shoes');
 
 
+
 //BUTTONS
 
 const prevBtn = document.querySelector('#prvBtn');
@@ -28,6 +29,7 @@ let leg = ['leg-1', 'leg-2', 'leg-3'];
 let shoes = document.querySelectorAll("div#innerBox-4 img");
 let shoe = ['shoe-1', 'shoe-2', 'shoe-3'];
 
+let colores = document.querySelectorAll("div.colores div");
 
 //COUNTER
 
