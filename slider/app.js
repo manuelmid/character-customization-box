@@ -30,6 +30,7 @@ let shoes = document.querySelectorAll("div#innerBox-4 img");
 let shoe = ['shoe-1', 'shoe-2', 'shoe-3'];
 
 let colores = document.querySelectorAll("div.colores div");
+console.log(colores.length);
 
 //COUNTER
 
