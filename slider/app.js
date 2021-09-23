@@ -30,7 +30,38 @@ let shoes = document.querySelectorAll("div#innerBox-4 img");
 let shoe = ['shoe-1', 'shoe-2', 'shoe-3'];
 
 let colores = document.querySelectorAll("div.colores div");
-console.log(colores.length);
+let skinColor = colores[0];
+let blueColor = colores[1];
+let greenColor = colores[2];
+let yellowColor = colores[3];
+let brownColor = colores[4];
+let redColor = colores[5];
+
+skinColor.addEventListener('click', function (){
+    headCtn.style.backgroundColor = '#deb887';
+    bodyCtn.style.backgroundColor = '#deb887';
+});
+blueColor.addEventListener('click', function (){
+    headCtn.style.backgroundColor = 'royalblue';
+    bodyCtn.style.backgroundColor = 'royalblue';
+});
+greenColor.addEventListener('click', function (){
+    bodyCtn.style.backgroundColor = '#75ec27';
+    headCtn.style.backgroundColor = '#75ec27';
+});
+yellowColor.addEventListener('click', function (){
+    headCtn.style.backgroundColor = '#d8e01f';
+    bodyCtn.style.backgroundColor = '#d8e01f';
+});
+brownColor.addEventListener('click', function (){
+    headCtn.style.backgroundColor = '#8b4513';
+    bodyCtn.style.backgroundColor = '#8b4513';
+});
+redColor.addEventListener('click', function (){
+    headCtn.style.backgroundColor = '#da1919';
+    bodyCtn.style.backgroundColor = '#da1919';
+});
+
 
 //COUNTER
 
