@@ -411,6 +411,11 @@ button:hover {
   cursor: pointer;
 }
 
+footer{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 
 /**HOVERS ANIMATIONS**/
 
