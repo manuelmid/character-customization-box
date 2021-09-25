@@ -415,6 +415,7 @@ footer{
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: 5px;
 }
 
 /**HOVERS ANIMATIONS**/
