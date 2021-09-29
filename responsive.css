@@ -10,6 +10,12 @@
 }
 
 @media (max-width: 970px){
+
+    #main-box {
+        flex: none;
+        align-items: baseline;
+    }
+    
     #box{
         flex-direction: column;
         height: auto;

@@ -15,7 +15,9 @@ body {
 }
 
 #main-box {
-  /*  */
+  display: flex;
+  width: 100%;
+  height: 100vh;
 }
 
 #box {
@@ -416,7 +418,7 @@ footer{
   flex-wrap: nowrap;
   justify-content: center;
   margin-top: 7.5px;
-  background-color: rgba(255, 255, 255, 0.089);
+  background-color: rgba(255, 255, 255, 0.048);
 }
 
 /**HOVERS ANIMATIONS**/
